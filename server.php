@@ -6,8 +6,6 @@
 
   $paragraph_length = strlen($paragraph);
 
-  
-
   $text_censored = str_replace($badWord, '***', $paragraph);
 
 ?>
