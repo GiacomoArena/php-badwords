@@ -19,16 +19,16 @@
 
   <div class="container">
 
-  <form action='server.php' method='POST'>
+  <form action='server.php' method='GET'>
   <div class="form-label">
 
     <label for="text-area">text</label>
-    <textarea class="form-control" placeholder="write your paragraph here"  name='paragraph'id="paragraph" style="height: 100px"></textarea>
+    <textarea class="form-control" for='text' placeholder="write your paragraph here"  name='text'id="text" style="height: 100px"></textarea>
   </div>
 
   <div class="mb-3">
     <label for="badwords" class="form-label">Bad word</label>
-    <input type="text" name='bad_word' class="form-control" id="bad_word"
+    <input type="text" for='badWord' name='badWord' class="form-control" id="bad_word"
     placeholder="write the word you want to censor">
   </div>
   

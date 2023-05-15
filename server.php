@@ -1,6 +1,11 @@
 <?php
 
-  $paragraph = $_POST[paragraph]
+  $paragraph = $_GET['text'];
+
+  $badWord = $_GET['badWord'];
+
+
+  $text_censored = str_replace($badWord, '***', $paragraph);
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +21,8 @@
 </head>
 <body>
   <h1>PHP Badwords</h1>
-
+  <h3> <?php echo $text_censored ?> </h3>
+  <h3>  </h3>
   <div class="container">
 
   
