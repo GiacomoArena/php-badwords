@@ -1,6 +1,6 @@
 <?php
 
-
+  $paragraph = $_POST[paragraph]
 
 ?>
 <!DOCTYPE html>
@@ -19,22 +19,7 @@
 
   <div class="container">
 
-  <form action='server.php' method='POST'>
-  <div class="form-label">
-
-    <label for="text-area">text</label>
-    <textarea class="form-control" placeholder="write your paragraph here"  name='paragraph'id="paragraph" style="height: 100px"></textarea>
-  </div>
-
-  <div class="mb-3">
-    <label for="badwords" class="form-label">Bad word</label>
-    <input type="text" name='bad_word' class="form-control" id="bad_word"
-    placeholder="write the word you want to censor">
-  </div>
   
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 
   </div>
 </body>
