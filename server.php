@@ -4,6 +4,9 @@
 
   $badWord = $_GET['badWord'];
 
+  $paragraph_length = strlen($paragraph);
+
+  
 
   $text_censored = str_replace($badWord, '***', $paragraph);
 
@@ -21,12 +24,15 @@
 </head>
 <body>
   <h1>PHP Badwords</h1>
-  <h3> <?php echo $text_censored ?> </h3>
-  <h3>  </h3>
   <div class="container">
-
-  
-
+    
+    <p>  <?php echo $paragraph  ?> </p>
+    <p>  <?php echo "the text length is $paragraph_length"  ?> </p>
+    <h3> <?php echo $text_censored ?> </h3>
+    <p>  <?php echo 'the text length is' . strlen($text_censored)  ?> </p>
+    <h3>  </h3>
+    
+    
   </div>
 </body>
 </html>
